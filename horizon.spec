@@ -32,7 +32,7 @@ OpenStack Nova cloud controller.
 %package -n openstack-dashboard
 Group:          Development/Languages/Python
 Summary:        Django based reference implementation of a web based management interface for OpenStack.
-Requires:       horizon = %{version}-%{release} httpd mod_wsgi memcached python-memcached
+Requires:       horizon = %{epoch}:%{version}-%{release} httpd mod_wsgi memcached python-memcached
 
 
 %description -n openstack-dashboard
@@ -55,7 +55,7 @@ you can disregard this advice.
 %package doc
 Summary:        Documentation for %{name}
 Group:          Documentation
-Requires:       %{name} = %{version}-%{release}
+Requires:       %{name} = %{epoch}:%{version}-%{release}
 
 
 %description doc
