@@ -65,6 +65,7 @@ Documentation for %{name}.
 %prep
 %setup -q -n %{name}-%{version}
 sed -i "s|'/auth/logout'|'%s/auth/logout' % request.environ.get('SCRIPT_NAME', '')|" horizon/horizon/middleware.py
+sed -i 's|max_length="20"|max_length="50"|' horizon/horizon/views/auth_forms.py
 
 
 %build
