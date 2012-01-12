@@ -7,6 +7,7 @@
 Name:           horizon
 Version:        2012.1
 Release:        1%{?dist}
+Epoch:          1
 Url:            http://www.openstack.org
 License:        Apache 2.0
 Source0:        %{name}-%{version}.tar.gz  
